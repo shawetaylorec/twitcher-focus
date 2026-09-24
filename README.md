@@ -4,7 +4,7 @@ A study timer played as British birdwatching. Focus in a hide, and a bird
 comes by every 15 minutes. Photograph them for your album, earn points, and
 spend them on train tickets to real nature reserves around Britain.
 
-**Play it:** https://shawetaylorec.github.io/twitcher-play/
+**Play it:** https://shawetaylorec.github.io/twitcher-focus/
 
 This is a test build for friends. Your save lives in your own browser on
 your own device; nothing is sent anywhere.
