@@ -2494,9 +2494,9 @@ function renderHide() {
   if (!sess) {
     var left = own(S.at) - found(S.at);
     box.innerHTML = '<h2 class="h">' + esc(siteName(S.at).replace(/^your/, "Your")) + '</h2>' +
-      '<p>' + (left ? left + ' of this place\'s own birds ' + (left === 1 ? 'is' : 'are') + ' still missing from your album.' :
-               'You have photographed all of this place\'s own birds. Birds from elsewhere still come by.') + '</p>' +
-      '<p class="muted">A bird comes by every 15 minutes. Stay an hour for two photographs, over two hours for three. Leaving the page ends the session.</p>' +
+      '<p>Lots of birds come to ' + esc(siteName(S.at)) + '. ' + (left ? 'There ' + (left === 1 ? 'is' : 'are') + ' still ' + left + ' which you have never photographed before.' :
+               'You have photographed every one of them.') + '</p>' +
+      '<p class="muted">Remember, the longer you focus, the more likely you are to spot something rare!</p>' +
       '<button class="btn" id="start">Start focusing</button>';
     $("start").onclick = startSession;
     return;
