@@ -2506,7 +2506,7 @@ function renderHide() {
   box.innerHTML = '<div class="timer" id="clock">' + clock(min) + '</div>' +
     '<p style="text-align:center;margin:6px 0">' + sess.rolls.length + ' bird' + (sess.rolls.length === 1 ? "" : "s") + ' so far · next in ' + Math.ceil(next) + ' min</p>' +
     '<div class="slots">' + [1, 2, 3].map(function (i) { return '<span class="slot' + (i <= slots ? " on" : "") + '">' + (i <= slots ? "SNAP" : i === 2 ? "1h" : "2h") + '</span>'; }).join("") + '</div>' +
-    '<p class="muted" style="text-align:center">The screen will go dark. Turn the brightness right down and get on with it.</p>' +
+    '<p class="muted" style="text-align:center">Birds are easily startled by light and movement. Turn your brightness down and leave your phone alone. If you leave this page, the birds fly off and your session ends.</p>' +
     '<div class="row" style="justify-content:center"><button class="btn quiet" id="stop">Finish session</button></div>';
   $("stop").onclick = function () { reveal(finishSession()); };
 }
