@@ -2728,9 +2728,9 @@ if (S.session) pending = finishSession(S.session.last || S.session.start);
 
 if (!S.started) {
   overlay('<div class="panel box"><h2 class="h">Twitcher</h2>' +
-    '<p>You are a wildlife photographer, and you live in London. For now the only place you can watch from is your kitchen window.</p>' +
+    '<p>You\'re living in London, but your real passion is birdwatching. You want to become a wildlife photographer, but you need to build up a portfolio.</p>' +
     '<p>Focus on your work and the birds come to you: one every 15 minutes. Stay longer and you get more photographs. Up to an hour gets one, then two, and over two hours gets three.</p>' +
-    '<p>Every minute of focus earns half a point, and rare birds earn a bonus. Spend points on train tickets to real reserves around Britain, each with birds of its own.</p>' +
+    '<p>Focus sessions earn you points that you can spend to travel to some of the UK\'s best birdwatching sites!</p>' +
     '<button class="btn" id="begin">Start in the garden</button></div>');
   $("begin").onclick = function () { S.started = true; persist(); closeOverlay(); show("hide"); };
 }
